@@ -775,6 +775,22 @@
     .p-2 {
         display: none;
     } 
+    .pricing-title{
+        font-size: 32px;
+        line-height: 42px;
+        
+    }
+    .pricing-title-img {
+        top: 45px;
+        left: 139px;
+    }
+    .about-testimonial-card-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .non-exp {
+        top: -38px;
+    }
 }
 @media screen and (max-width: 375px) {
     .hero-content {
@@ -845,7 +861,7 @@
         left: 105px;
     }
     
-    
+
     
 }
 @media screen and (max-width: 320px) {
@@ -863,4 +879,5 @@
     .p-5 {
         display: none;
     }
+    
 }
