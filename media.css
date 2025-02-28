@@ -1,0 +1,883 @@
+@media screen and (max-width: 1233px) {
+    .post-title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero-content {
+        max-width: none;
+    }
+    
+    .virtual-tour-title {
+        padding: 24px;
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .virtual-tour-action {
+        padding: 24px;
+    }
+    
+    .virtual-tour-img {
+        height: 32px;
+        left: -8px;
+        top: 8px;
+    }
+    .statistics {
+        flex-direction: column;
+    }
+    .statistics-content {
+        max-width: none;
+    }
+    .testimonial-heading {
+        flex-direction: column;
+        align-items: unset;
+        gap: 16px;
+    }
+    .faq {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .faq-heading {
+        align-items: center;
+        gap: 22px;
+    }
+   
+    .faq-description {
+        max-width: 985px;
+    }
+    .testimonial-content-comments {
+        column-gap: 48px;
+        padding: 0;
+    }
+    .testimonial-card {
+        max-width: calc(50% - 24px);
+        min-width: 40%;
+        width: calc(50% - 24px);
+    }
+    .pricing-features-cards {
+        flex-wrap: wrap;
+    }
+    .blog-title-main {
+        font-size: 48px;
+        line-height: 57px;
+    }
+    .blog-hero-content {
+        height: unset;
+        gap: 80px;
+    }
+    .post-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .post-article {
+        margin: unset;
+    }
+    .review {
+        width: 100%;
+        max-width: 720px;
+        gap: 24px;
+        margin-left: 16px;
+        margin-bottom: 96px;
+    }
+    .review-avatar {
+        order: 3;
+    }
+    .review-likes {
+        order: 2;
+        flex-direction: row;
+    }
+    .blog-card-item-timepass {
+        order: 1;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .header-interaction {
+        display: none;
+    }
+    .burger-menu {
+        background-color: #000000;
+        padding: 0 13px;
+        border: 1px solid #000000;
+        border-radius: 42px;
+        display: flex;
+        align-items: center;
+        height: 45px;
+    }
+    
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+        z-index: 1;
+    }
+    .menu-overlay-head {
+        display: flex;
+        justify-content: space-between;
+        padding: 26px 40px 26px 20px;
+        align-items: center;
+    }
+    .menu-overlay:target {
+        display: unset;
+        left: 0;
+    }
+    .close-btn {
+        height: 20px;
+    }
+    .header-burger-menu {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 32px;
+    }
+    .header-burger-menu-item {
+        font-family: 'Neue Regrade Semibold';
+        font-size: 32px;
+        line-height: 45px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #fff;
+    }
+    .header-burger-menu-stack {
+        padding: 24px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+    }
+    .burger-buttons {
+        justify-content: end;
+
+    }
+    .burger-outline {
+        background-color: #fff;
+    }
+    .hero-content {
+        background-position: top 113px left 177px;
+        background-size: 213px 82px;
+        gap: 81px;
+    }
+    .hero-content-stack {
+        flex-direction: column-reverse;
+        align-items: unset;
+        gap: 48px;
+    }
+    .hero-content-title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .hero-image-container {
+        max-width: 722px;
+    }
+    .features-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .features-cards-item {
+        max-width: 458px;
+    }
+    .virtual-tour-video {
+        order: 2;
+        height: 400px;
+    }
+    .virtual-tour-action {
+        width: 100%;
+        order: 3;
+    }
+    .testimonial-title {
+        font-size: 48px;
+        line-height: 58px;
+        height: unset;
+    }
+    .testimonial-heading {
+        gap: 30px;
+    }
+    .testimonial-subheading {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .testimonial-img {
+        height: 32px;
+        top: 0px;
+        left: 0px;
+    }
+    .blog-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        max-width: 460px;
+        grid-row-gap: 32px;
+    
+    }
+    .pricing-title-info {
+        flex-direction: column;
+        align-items: unset;
+        gap: 16px;
+    }
+    .contact-title-info{
+        flex-direction: column;
+        align-items: unset;
+        gap: 16px;
+    }
+    .contact-subtitle {
+        max-width: 600px;
+        margin-bottom: 22px;
+    }
+    .footer-card {
+        flex-direction: column;
+        gap: 48px
+    }
+
+    .social-proof {
+        width: unset;
+        overflow-x: auto;
+    }
+    .blog-tabs-span {
+        justify-content: space-between;
+    }
+    .blog-tabs-filter {
+        display: none;
+    }
+    .blog-tabs-filter-menu {
+        display: inline;
+    }
+    .tabs-search {
+        width: 100%;
+    }
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .post-content {
+        padding: 0 16px;
+    }
+    .post-material {
+        margin-left: unset;
+        gap: 26px;
+    }
+    .about-subtitle {
+        order: 1;
+    }
+    .about-row {
+        flex-direction: column;
+        margin-bottom: 32px;
+        gap: 24px;
+    }
+    .about-testimonial-card.expand {
+        max-width: unset;
+    }
+    .about-testimonial-card-title {
+        order: 1;
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .about-testimonial-card-image-container {
+        order: 2;
+    }
+    .about-testimonial-card-paragraph-page {
+        order: 3;
+        position: relative;
+    }
+    .exp {
+        position: absolute;
+        top: -305px;
+        right: 0;
+    }
+    .non-exp {
+        position: absolute;
+        top: -41px;
+        right: 0px;
+    }
+    .about-testimonial-card:nth-child(2) .about-testimonial-card-image-container, 
+    .about-testimonial-card:nth-child(3) .about-testimonial-card-image-container{
+       display: none;
+    }
+}
+
+    
+
+@media screen and (max-width: 768px) {
+    .header {
+        margin-top: 17px;
+    }
+    .header-body {
+        height: 69px;
+    }
+    .header-logo-img {
+        width: 99px;
+    }
+    .hero {
+        margin-top: 24px;
+    }
+    .hero-content {
+        background-position: top 129px left 177px;
+        padding: 32px 24px;
+    }
+    .hero-content-title {
+        max-width: 400px;
+        
+    }
+    .hero-content-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .hero-image-container {
+        max-width: 448px;
+    }
+    .social-proof {
+        margin-bottom: 70px;
+    }
+    .social-proof-logo {
+        margin-right: 34px;
+
+    }
+    .features {
+        margin-bottom: 93px;
+    }
+    .features-heading-letter {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .features-heading-img {
+        height: 48px;
+        width: 120px;
+    }
+    .features-heading-letter {
+        flex-direction: column;
+    }
+    .features-cards {
+        padding-top: 32px;
+    }
+    .features-cards-item {
+        padding: 24px;
+        gap: 16px;
+    }
+    .virtual-tour {
+        margin-bottom: 91px;
+    }
+    .virtual-tour-action {
+        flex-direction: column;
+        align-items: center;
+    }
+    .statistics-content {
+        padding: 32px 24px;
+    }
+    .statistics-content-heading, .statistics-content-info-item-main{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .statistics-content-info {
+        column-gap: 24px;
+        row-gap: 40px;
+    }
+    
+    .testimonial {
+        margin-bottom: 105px;
+    }
+    
+    .testimonial-content {
+        padding: 24px;
+    }
+    .testimonial-content-comments {
+        flex-wrap: nowrap;
+        width: unset;
+        overflow-x: auto;
+        column-gap: 24px;
+        margin: 0 -24px;
+        padding: 0 24px;
+        
+    }
+    .testimonial-card {
+        max-width: calc(100% - 10px);
+        min-width: calc(100% - 10px);
+    }
+    .faq {
+        margin-bottom: 79px;
+    }
+    .faq-title {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .faq-details-item {
+        padding: 24px;
+    }
+    .faq-details-paragraph {
+        width: 100%;
+    }
+    .faq-details-summary {
+        padding-right: 32px;
+    }
+    .cta {
+        margin-bottom: 91px;
+    }
+    .cta-content {
+        padding: 24px 20px 28px;
+    }
+    .cta-heading {
+        gap: 22px;
+    }
+    .cta-title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .cta-title-img {
+        width: 160px;
+        height: 58px;
+    }
+    .blog {
+        margin-bottom: 35px;
+    }
+    .blog-hero {
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+    .blog-tabs {
+        margin-bottom: 48px;
+    }
+    .blog-content {
+        padding-bottom: 32px;
+        grid-row-gap: 25px;
+    }
+    
+    .blog-title {
+        font-size: 32px;
+        line-height: 45px;
+        margin-bottom: 22px;
+    }
+    .blog-title-img {
+        width: 120px;
+        height: 45px;
+    }
+    .blog-card-title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .blog-card-img {
+        height: 300px;
+    }
+    .pricing {
+        margin-top: 24px;
+        margin-bottom: 75px;
+    }
+    .pricing-virual-tour {
+        padding: 24px;
+    }
+    .pricing-title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .pricing-title-img {
+        height: 32px;
+        top: 8px;
+        left: 532px;
+    }
+    .pricing-title-info {
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+    }
+    .pricing-testimonial-card {
+        gap: 24px;
+        padding: 24px;
+    }
+    .pricing-testimonial-card-bonus-stack {
+        flex-wrap: wrap;
+    }
+    .pricing-testimonial-card-name {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .pricing-subscribe-description {
+        text-align: center;
+    }
+    .pricing-testimonial-card:nth-child(2n) {
+        height: unset;
+    }
+    .pricing-features-title {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .pricing-features-title-img {
+        width: 120px;
+        height: 48px;
+    }
+    .pricing-btn {
+        width: 100%;
+        text-align: center;
+    }
+    .blog-hero-trend-timeread {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .blog-hero-trend-theme {
+        display: none;
+        
+    }
+    .blog-hero-content {
+        padding: 32px 24px;
+        gap: 8px;
+    }
+    .blog-hero-action {
+        flex-direction: column;
+        gap: 75px;
+        align-items: unset;
+    }
+    .blog-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 22px;
+    }
+    .post-material-disclaimer {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 24px;
+    }
+    .post-title {
+        word-break: break-word;
+    }
+    .post-material-heading {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .blog-tabs.pages {
+        gap: 12px;
+    }
+    .contact {
+        margin-top: 24px;
+    }
+    .contact-title {
+        font-size: 48px;
+        line-height: 58px;
+        white-space: unset;
+    }
+    .contact-label {
+        flex-direction: column-reverse;
+        gap: 48px;
+    }
+    .contact-title-img {
+        width: 32px;
+    }
+    .contact-content {
+        padding: 24px;
+    }
+    .contact-title-info {
+        margin-bottom: 24px;
+    }
+    .contact-label-stack-name {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .contact-fullname {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .contact-title-span {
+        white-space: nowrap;
+    }
+
+    .footer-logo {
+        width: 99px;
+    }
+    .footer-newsletter-stack {
+        gap: 20px;
+    }
+    .footer-adv {
+        text-align: center;
+    }
+    .footer-card {
+        gap: 42px;
+    }
+    .footer-links-categories {
+        gap: 6px;
+    }
+    .p-3, .p-4 {
+        display: none;
+    }
+    .p-hide {
+        display: block;
+    }
+    .post-material-content-heading {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .post-title-info {
+        margin: 20px 16px 26px;
+        padding-bottom: unset;
+    }
+    .about-title {
+        font-size: 48px;
+        line-height: 58px;
+        margin-bottom: 24px;
+        max-width: 580px;
+        padding-right: 32px;
+    }
+    .about-title-img {
+        width: 32px;
+        top: 70px;
+        left: 482px;
+        right: unset;
+    }
+    .about-title-info {
+        padding: 24px 16px;
+    }
+    .about-subtitle {
+        text-align: center;
+        margin: auto;
+    }
+    .about {
+        margin-top: 24px;
+        margin-bottom: 100px;
+    }
+    .cta-about {
+        margin-bottom: 0;
+    }
+    
+    
+}
+@media screen and (max-width: 656px) {
+    .pricing-title {
+        padding-right: 32px;
+    }
+    .pricing-title-img {
+        top: 67px;
+        left: 204px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .hero-content {
+        background-position: top 243px left 38px;
+    }
+    .hero-content-title {
+        max-width: 310px;
+    }
+    .hero-image-container {
+        max-width: 358px;
+    }
+    .pricing-testimonial-card {
+        min-width: unset;
+    }
+    
+    .footer-copyright {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .about-title-img {
+        top: 128px;
+        left: 160px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hero {
+        margin-bottom: 67px;
+    }
+    .hero-image {
+        height: 320px;
+    }
+    .btn-red {
+        width: 100%;
+        justify-content: center;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .features-cards {
+        max-width: 358px;
+    }
+    .features-cards-heading {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .virtual-tour-video {
+        height: 240px;
+    }
+    .virtual-tour-description {
+        max-width: 310px;
+    }
+    .virtual-tour-button {
+        width: 100%;
+        justify-content: center;
+    }
+    .statistics {
+        margin-bottom: 91px;
+    }
+    .statistics-image {
+        height: 320px;
+    }
+    
+    .cta-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .pricing-testimonial-card-price {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .pricing-testimonial-card-month {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    
+    .pricing-testimonial-card-popular {
+        width: fit-content;
+    }
+    .pricing-features-card {
+        min-width: unset;
+    }
+    .cta-blog {
+        margin-bottom: 14px;
+    }
+    .footer-newsletter {
+        align-items: center;
+    }
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .footer-links-categories {
+        padding-left: unset;
+    }
+    .footer-link {
+        align-items: center;
+    }
+    .footer-link-item {
+        padding: unset;
+    }
+    .copyright-links {
+        
+        align-items: center;
+        gap: 16px;
+    }
+    .footer-email-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-subscribe {
+        max-width: 126px;
+    }
+    .footer-card {
+        padding: 32px;
+    }
+}
+@media screen and (max-width: 387px) { 
+    .p-2 {
+        display: none;
+    } 
+    .pricing-title{
+        font-size: 32px;
+        line-height: 42px;
+        
+    }
+    .pricing-title-img {
+        top: 45px;
+        left: 139px;
+    }
+    .about-testimonial-card-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .non-exp {
+        top: -38px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .hero-content {
+        background-size: 149px 55px;
+        background-position: top 180px left 29px;
+        gap: 32px;
+    }
+    .hero-content-title {
+        max-width: 225px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .hero-content-stack {
+        align-items: center;
+        gap: 32px;
+    }
+    .hero-content-text {
+        margin-right: unset;
+    }
+    .btn-red {
+        font-size: 16px;
+        padding: 16px;
+    }
+    .hero-image-container {
+        max-width: 273px;
+    }
+    .features-heading-letter {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .features-heading-img {
+        height: 32px;
+        width: 80px;
+    }
+    .statistics-content-heading, .statistics-content-info-item-main{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .statistics-content-info {
+        row-gap: 28px;
+    }
+    .statistics-content-info-item-submain {
+        font-size: 14px;
+    }
+    .cta-btn {
+        font-size: 16px;
+        padding: 16px;
+        height: unset;
+        width: 100%;
+        justify-content: center;
+    }
+    .blog-title-main {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .blog-card-img {
+        height: unset;
+    }
+    .copyright-links {
+        flex-direction: column;
+    }
+    .about-title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .about-title-img {
+        top: 86px;
+        left: 105px;
+    }
+    
+
+    
+}
+@media screen and (max-width: 320px) {
+    .pricing-testimonial-card-popular-name {
+        flex-direction: column;
+        align-items: unset;
+    }
+    .contact-title {
+        font-size: 32px;
+        line-height: 42px;
+    }    
+    .contact-title-img {
+        width: 24px;
+    }
+    .p-5 {
+        display: none;
+    }
+    
+}
