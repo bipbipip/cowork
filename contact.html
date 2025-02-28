@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/media.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header-body">
+        <a href="index.html" class="header-logo">
+          <img src="./assets/Logo.svg" alt="Logotype" class="header-logo-img" />
+        </a>
+        <section class="header-interaction">
+          <nav class="header-menu">
+            <a href="about.html" class="header-menu-item">About</a>
+            <a href="pricing.html" class="header-menu-item">Pricing</a>
+            <a href="blog.html" class="header-menu-item">Blog</a>
+            <a href="contact.html" class="header-menu-item">Contact</a>
+          </nav>
+          <div class="header-buttons">
+            <button class="btn btn-outline">Log In</button>
+            <button class="btn btn-blue">Sign Up</button>
+          </div>
+        </section>
+        <a href="#menu" class="burger-menu"
+          ><img
+            src="./assets/burger-menu.svg"
+            alt="burger menu icon"
+            class="burger-menu-icon"
+        /></a>
+        <div class="menu-overlay" id="menu">
+          <div class="menu-overlay-head">
+            <img
+              src="./assets/Logo-white.svg"
+              alt="Logotype"
+              class="footer-logo"
+            />
+            <a href="#" class="close-btn"
+              ><img
+                src="/assets/close.svg"
+                alt="close menu button"
+                class="burger-menu-close"
+            /></a>
+          </div>
+
+          <div class="header-burger-menu-stack">
+            <nav class="header-burger-menu">
+              <a href="about.html" class="header-burger-menu-item">About</a>
+              <a href="pricing.html" class="header-burger-menu-item">Pricing</a>
+              <a href="blog.html" class="header-burger-menu-item">Blog</a>
+              <a href="contact.html" class="header-burger-menu-item">Contact</a>
+            </nav>
+            <div class="header-buttons burger-buttons">
+              <button class="btn btn-outline burger-outline">Log In</button>
+              <button class="btn btn-blue">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="contact container">
+        <section class="contact-content">
+          <div class="contact-title-info">
+            <h1 class="contact-title">
+              Contact
+              <span class="contact-title-span">
+                Us
+                <img
+                  src="./assets/chat-bubles.svg"
+                  alt="chat bubles icon"
+                  class="contact-title-img"
+                />
+              </span>
+            </h1>
+            <p class="contact-subtitle">
+              Have questions about our coworking space and membership plans?
+              Drop us a line using the form below or give us a call.
+            </p>
+          </div>
+          <section class="contact-label">
+            <div class="contact-label-description">
+              <div class="contact-label-stack">
+                <span class="contact-label-stack-name">Call Us At</span>
+                <span class="contact-label-stack-info">(555) 555-5555</span>
+              </div>
+              <div class="contact-label-stack">
+                <span class="contact-label-stack-name">Office Hours</span>
+                <span class="contact-label-stack-info"
+                  >Monday-Friday: 9am - 6pm</span
+                >
+                <span class="contact-label-stack-info"
+                  >Saturday: 9am - 3pm</span
+                >
+                <span class="contact-label-stack-info">Closed Sundays</span>
+              </div>
+              <div class="contact-label-stack">
+                <span class="contact-label-stack-name">Location</span>
+                <span class="contact-label-stack-info"
+                  >123 Coworking Street</span
+                >
+                <span class="contact-label-stack-info"
+                  >Anycity, State 12345</span
+                >
+              </div>
+            </div>
+            <div class="contact-label-fields">
+              <div class="contact-fullname">
+                <input
+                  type="text"
+                  name="first-name"
+                  class="contact-first-name field-style"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="last-name"
+                  class="contact-last-name field-style"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <input
+                type="email"
+                name="email"
+                id=""
+                class="contact-email field-style"
+                placeholder="Email Address"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                id=""
+                class="contact-phone field-style"
+                placeholder="Phone"
+              />
+              <select name="plan" id="" class="contact-plan field-style">
+                <option value="" disabled selected hidden>Select a plan</option>
+                <option value="0" class="contact-option field-style">
+                  Planokur
+                </option>
+                <option value="1" class="contact-option field-style">
+                  Ne planokur
+                </option>
+              </select>
+
+              <textarea
+                name="contact-message"
+                id=""
+                class="contact-message field-style"
+                placeholder="Message"
+                required
+              ></textarea>
+              <input type="submit" value="Submit" class="btn btn-submit" />
+              <p class="contact-disclaimer">
+                We aim to respond to all inquiries within 24 business hours. For
+                the fastest response, please include your preferred membership
+                plan of interest and any specific questions you may have. One of
+                our workspace specialists will be happy to assist you further.
+              </p>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section class="footer container footer-wrapper">
+        <section class="footer-card">
+          <div class="footer-newsletter">
+            <img
+              src="./assets/Logo-white.svg"
+              alt="Logotype"
+              class="footer-logo"
+            />
+            <div class="footer-newsletter-stack">
+              <span class="footer-adv"
+                >Join our newsletter to stay up to date on features and
+                releases.</span
+              >
+              <div class="footer-email-form">
+                <input
+                  type="email"
+                  name="email"
+                  id="1"
+                  placeholder="Enter your email"
+                  class="footer-email"
+                />
+                <button class="footer-subscribe">Subscribe</button>
+              </div>
+              <span class="footer-adv"
+                >By subscribing you agree to with our Privacy Policy and provide
+                consent to receive updates from our company.</span
+              >
+            </div>
+          </div>
+          <section class="footer-links">
+            <div class="footer-links-categories">
+              <span class="footer-links-category">Explore More</span>
+              <div class="footer-link">
+                <a href="./index.html" class="footer-link-item">Home</a>
+                <a href="./about.html" class="footer-link-item">About</a>
+                <a href="./pricing.html" class="footer-link-item">Pricing</a>
+                <a href="./blog.html" class="footer-link-item">Blog</a>
+                <a href="#" class="footer-link-item">Events</a>
+              </div>
+            </div>
+            <div class="footer-links-categories">
+              <span class="footer-links-category">Stay Connected</span>
+              <div class="footer-link">
+                <a href="#" class="footer-link-item">Subscribe</a>
+                <a href="#" class="footer-link-item">Member Stories</a>
+                <a href="#" class="footer-link-item">Locations</a>
+                <a href="#" class="footer-link-item">Write for Us</a>
+              </div>
+            </div>
+            <div class="footer-links-categories">
+              <span class="footer-links-category">Follow Us</span>
+              <div class="footer-link">
+                <a href="#" class="footer-link-item">Facebook</a>
+                <a href="#" class="footer-link-item">Instagram</a>
+                <a href="#" class="footer-link-item">X</a>
+                <a href="#" class="footer-link-item">LinkedIn</a>
+                <a href="#" class="footer-link-item">Youtube</a>
+              </div>
+            </div>
+          </section>
+        </section>
+        <div class="footer-copyright">
+          <span class="author">© 2024 Cowork. All rights reserved.</span>
+          <div class="copyright-links">
+            <a href="#" class="copyright-link-item">Privacy Policy</a>
+            <a href="#" class="copyright-link-item">Terms of Service</a>
+            <a href="#" class="copyright-link-item">Cookies Settings</a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

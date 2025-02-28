@@ -1,0 +1,1894 @@
+/* Global properties */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --accent-color: #3139fb;
+}
+
+@font-face {
+  font-family: "General Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("General Sans Regular"),
+    url("../fonts/GeneralSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Neue Regrade Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neue Regrade Regular"),
+    url("../fonts/Neue-Regrade-Regular.otf") format("woff");
+}
+@font-face {
+  font-family: "Neue Regrade Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neue Regrade Semibold"),
+    url("../fonts/Neue-Regrade-Semibold.otf") format("woff");
+}
+
+.container {
+  padding: 0 16px;
+  margin: auto;
+  max-width: 1440px;
+}
+.wrapper {
+  margin-bottom: 144px;
+}
+.footer-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.btn {
+  height: 48px;
+  padding: 0px 25px;
+  border-radius: 100px;
+  border: 1px solid;
+  border-color: transparent;
+  background-color: transparent;
+  font-family: "General Sans Regular";
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* end Global properties */
+
+/* header */
+.header {
+  margin-top: 24px;
+  font-family: "General Sans Regular";
+  font-size: 16px;
+}
+
+.header-body {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+}
+.header-interaction {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.header-menu {
+  display: flex;
+  gap: 50px;
+}
+
+.header-menu-item {
+  text-decoration: none;
+  color: #000000;
+}
+.header-menu-item:hover {
+  border-bottom: 1px solid #000000;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.burger-menu {
+  display: none;
+}
+.menu-overlay {
+  display: none;
+}
+/* end header */
+
+/* button */
+
+.btn-outline {
+  border: 1px solid #000000;
+}
+.btn-outline:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+  border-color: var(--accent-color);
+}
+
+.btn-blue {
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  
+}
+.btn-blue:hover {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  transition: .3s;
+  
+}
+/* end button */
+
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 16px 0 16px;
+  
+  margin-top: 48px;
+  margin-bottom: 80px;
+  gap: 15px;
+}
+.hero-content {
+  height: 640px;
+  background-color: #000000;
+  border-radius: 32px;
+  background-image: url(../assets/Vector_1.svg);
+  background-repeat: no-repeat;
+  background-position: top 246px left 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 72px 32px 32px;
+  flex: 2;
+  max-width: 933px;
+}
+
+.hero-content-title {
+  color: #fff;
+  font-family: "Neue Regrade Semibold";
+  text-transform: uppercase;
+  font-size: 96px;
+  font-weight: 700;
+  word-spacing: -2px;
+  line-height: 98px;
+  letter-spacing: 1px;
+}
+
+.hero-image-container {
+  height: 640px;
+  flex: 1;
+}
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+}
+.btn-red {
+  display: flex;
+ 
+  text-decoration: none;
+  font-family: "General Sans Regular";
+  color: #fff;
+  background-color: #ff3333;
+  word-spacing: 5px;
+  border: 1px solid #ff3333;
+  padding: 32px 48px; 
+  align-items: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  border-radius: 100px;
+  width: fit-content;
+  
+}
+.btn-red:hover {
+  background-color: #fff;
+  color: #ff3333;
+  transition: .3s;
+}
+.hero-content-stack {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.hero-content-text {
+  color: #fff;
+  font-family: "Neue Regrade Regular";
+  font-size: 24px;
+  line-height: 34px;
+  text-transform: uppercase;
+  position: relative;
+  margin-right: 38px;
+  letter-spacing: 1px;
+}
+.hero-content-text::before {
+  width: 200px;
+  height: 1px;
+  background-color: #fff;
+  content: "";
+  position: absolute;
+  top: -8px;
+}
+
+.social-proof {
+  margin-bottom: 80px;
+  
+  max-width: 980px;
+  white-space: nowrap;
+}
+
+.social-proof-heading {
+  font-family: "General Sans Regular";
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  word-spacing: 3px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  color: var(--accent-color);
+}
+
+.social-proof-companies {
+  display: flex;
+  align-items: center;
+  padding: 24px 0px;
+}
+.social-proof-logo {
+  display: inline-block;
+  width: fit-content;
+  margin-right: 48px;
+}
+
+.features {
+  margin-bottom: 142px;
+}
+
+.features-heading {
+  display: flex;
+  justify-content: center;
+}
+.features-heading-letter {
+  font-family: "Neue Regrade Semibold";
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57.6px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+}
+.features-heading-img {
+  width: 180px;
+  height: 58px;
+  border-radius: 48px;
+  object-fit: cover;
+  margin: 0 16px;
+}
+.fearures-heading-span {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.features-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding-top: 80px;
+}
+.features-cards-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid #000000;
+  border-radius: 32px;
+  padding: 32px;
+  flex: 1;
+}
+.features-cards-img {
+  width: 48px;
+  height: 48px;
+}
+.features-cards-heading {
+  font-family: "Neue Regrade Semibold";
+  font-size: 24px;
+  line-height: 33.6px;
+  font-weight: 700;
+}
+.features-cards-description {
+  text-align: center;
+  font-family: "General Sans Regular";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.virtual-tour-content {
+  max-width: 1440px;
+  background-color: var(--accent-color);
+  border-radius: 32px;
+  overflow: hidden;
+}
+.virtual-tour-heading {
+  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.virtual-tour-title {
+  font-family: "Neue Regrade Semibold";
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 96px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 72px 32px 64px;
+}
+.virtual-tour-action {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 24px;
+  padding: 72px 32px 64px;
+}
+.virtual-tour-description {
+  color: #fff;
+  font-family: "General Sans Regular";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  max-width: 272px;
+}
+.virtual-tour-button {
+  display: flex;
+  flex-direction: row;
+  height: 97px;
+  align-items: center;
+  padding: 0 53px;
+  background-color: #fff;
+  font-family: "General Sans Regular";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 100px;
+  cursor: pointer;
+  white-space: nowrap;
+  
+}
+
+.virtual-tour-img {
+  position: relative;
+  left: -19px;
+  top: 13px;
+}
+
+.virtual-tour-video {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+  
+}
+
+.statistics {
+  display: flex;
+  gap: 32px;
+  
+}
+
+.statistics-content {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  border: 5px dashed var(--accent-color);
+  background-color: #fffadd;
+  border-radius: 32px;
+  padding: 86px 120px 92px 28px;
+  max-width: 736px;
+  width: 100%;
+}
+
+.statistics-content-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+ 
+}
+.statisctics-content-subheading {
+  font-family: "General Sans Regular";
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  color: var(--accent-color);
+}
+.statistics-content-heading {
+  font-family: "Neue Regrade Semibold";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: var(--accent-color);
+  /* white-space: nowrap; */
+  
+}
+.statistics-content-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  
+  row-gap: 44px;
+  column-gap: 62px;
+}
+.statistics-content-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
+
+.statistics-content-info-item-main {
+  font-family: "Neue Regrade Semibold";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  color: var(--accent-color);
+}
+.statistics-content-info-item-submain {
+  font-family: "General Sans Regular";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.statistics-img-container {
+  border-radius: 32px;
+  overflow: hidden;
+}
+.statistics-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.testimonial {
+  margin-bottom: 146px;
+}
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  background-color: #000000;
+  padding: 72px 32px;
+  border-radius: 32px;
+
+}
+.testimonial-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.testimonial-title {
+  max-width: 683px;
+  height: 192px;
+  font-family: "Neue Regrade Semibold";
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.testimonial-img {
+  position: relative;
+  top: -197px;
+  left: 675px;
+}
+.testimonial-subheading {
+  color: #fff;
+  font-family: "Neue Regrade Regular";
+  font-size: 24px;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.testimonial-subheading::before {
+  width: 200px;
+  height: 1px;
+  background-color: #fff;
+  content: "";
+  position: absolute;
+  top: -8px;
+}
+
+.testimonial-content-comments {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 47px;
+  column-gap: 63px;
+  padding: 34px 40px 51px 44px;
+}
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 360px;
+  min-width: 25%;
+  flex: 1;
+  padding: 32px;
+  gap: 24px;
+  border-radius: 24px;
+  background-color: var(--accent-color);
+}
+
+.testimonial-card-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.testimonial-card-review {
+  font-family: "General Sans Regular";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  word-spacing: 0.09em;
+  color: #fff;
+}
+
+.testimonial-card-person {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-card-name {
+  font-family: "General Sans Regular";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.testimonial-card-work {
+  font-family: "General Sans Regular";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.testimonial-card:nth-child(2n) {
+  background-color: #fffadd;
+}
+.testimonial-card:nth-child(2n) .testimonial-card-review {
+  color: #000000;
+}
+.testimonial-card:nth-child(2n) .testimonial-card-person {
+  color: #000000;
+}
+.faq {
+    display: flex;
+    gap: 7px;
+   
+}
+
+.faq-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.faq-heading-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.faq-subheading {
+  font-family: "General Sans Regular";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  
+}
+
+.faq-title {
+    font-family: 'Neue Regrade Semibold';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+.faq-description {
+    font-family: 'General Sans Regular';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    max-width: 391px;
+    word-spacing: 1px;
+}
+.faq-details {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex: 2;
+}
+.faq-details-item {
+    display: flex;
+    flex-direction: column;
+   
+    border: 1px solid #000000;
+    border-radius: 32px;
+    padding: 35px 35px 33px 32px;
+    cursor: pointer;
+    
+}
+.faq-details-item[open] {
+    gap: 16px;
+    
+
+}
+.faq-details-summary {
+    font-family: 'General Sans Regular';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    word-spacing: 3px;
+    color: #000000;
+    list-style: none;
+    position: relative;
+}
+.faq-details-summary::after {
+    width: 32px;
+    height: 32px;
+    content: "";
+    background-image: url(../assets/details_arrow.svg);
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    rotate: 180deg;
+    transition: .3s;
+}
+.faq-details-item[open] .faq-details-summary::after{
+    rotate: 0deg;
+    transition: .3s;
+    
+
+}
+.faq-details-paragraph {
+    font-family: 'General Sans Regular';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 44%;
+    letter-spacing: 0.01em;
+}
+.faq-details-item[open] .faq-details-paragraph{
+    animation: slide .3s ;
+    
+}
+@keyframes slide {
+    0% {
+        opacity: 0; transform: translate(0, -30px);
+    }
+    100% {
+        opacity: 1; transform: translate(0, 0);
+    }
+}
+.cta {
+  
+}
+.cta-about {
+  margin-bottom: 72px;
+}
+.cta-blog {
+  margin-bottom: 48px;
+}
+.cta-post {
+  margin-bottom: 44px;
+}
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+    background-color: #000000;
+    border-radius: 32px;
+    padding: 72px 32px;
+    align-items: center;
+}
+.cta-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+.cta-title {
+    font-family: 'Neue Regrade Semibold';
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 106px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cta-title-img {
+  max-width: 240px;
+  max-height: 96px;
+  border-radius: 48px;
+  vertical-align: text-top;
+  object-fit: cover;
+  width: 100%;
+     
+}
+.cta-subheading {
+    font-family: 'General Sans Regular';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    max-width: 639px;
+    word-spacing: 1px;
+}
+.cta-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'General Sans Regular';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fff;
+    background-color: #FF3333;
+    padding: 0 55px;
+    height: 94px;
+    border-radius: 100px;
+
+}
+.cta-btn:hover {
+    cursor: pointer;
+    color: #FF3333;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
+}
+.blog-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog-upheading {
+    font-family: 'General Sans Regular';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 12px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+   
+}
+.blog-title {
+   
+    font-family: 'Neue Regrade Semibold';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 70px;
+    color: #000000;
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 12px;
+    letter-spacing: 0.02em;
+}
+.blog-title-img {
+    width: 180px;
+    height: 58px;
+    border-radius: 48px;
+    vertical-align: sub;
+    object-fit: cover;
+    margin-right: 18px;
+}
+.blog-subheading {
+    font-family: 'General Sans Regular';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000000;
+    letter-spacing: 0.01em;
+    max-width: 520px;
+    text-align: center;
+}
+.blog-content {
+ 
+  padding: 48px 0 64px 0;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  
+}
+.blog-card-href {
+  text-decoration: none;
+}
+.blog-card {
+  display: flex;
+  flex-direction: column;
+}
+.blog-card-img {
+  border-radius: 24px;
+  width: 100%;
+  aspect-ratio: 458 / 300;
+}
+.blog-card-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-card-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0 16px 0;
+
+}
+.blog-card-item-theme {
+  font-family: 'General Sans Regular';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 4px 8px;
+  width: fit-content;
+}
+.blog-card-item-timepass {
+  font-family: 'General Sans Regular';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
+}
+.blog-card-title {
+  font-family: 'Neue Regrade Semibold';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.blog-btn {
+  max-width: 107px;
+  text-decoration: none;
+  position: relative;
+  white-space: nowrap;
+  border: 1px solid var(--accent-color);
+}
+.blog-btn:hover {
+  color: var(--accent-color);
+  background-color: #fff;
+  
+  transition: .3s;
+  
+}
+
+/* footer */
+.footer-card {
+  display: flex;
+  gap: 8%;
+  justify-content: space-between;
+  padding: 48px 32px;
+  border-radius: 32px;
+  background-color: #000000;
+}
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 2;
+}
+.footer-newsletter-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+}
+.footer-logo {
+  width: 119px;
+}
+.footer-adv {
+  font-family: 'General Sans Regular';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #fff;
+
+}
+.footer-email-form {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.footer-email {
+  background-color: #000000;
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  font-family: 'General Sans Regular';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  padding: 12px 0 12px 12px;
+}
+.footer-subscribe {
+  font-family: 'General Sans Regular';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #000000;
+  background-color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 24px;
+  cursor: pointer;
+  
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  /* gap: 40px; */
+  flex: 3;
+  
+}
+.footer-links-categories {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 28px;
+  gap: 15px;
+}
+.footer-links-category {
+  font-family: 'General Sans Regular';
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer-link {
+  display: flex;
+  flex-direction: column;
+}
+.footer-link-item {
+  font-family: 'General Sans Regular';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 0;
+}
+.footer-link-item:hover {
+ 
+  text-decoration: underline;
+}
+.footer-copyright {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.author {
+  font-family: 'General Sans Regular';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
+}
+.copyright-links {
+  display: flex;
+  gap: 24px;
+}
+.copyright-link-item {
+  font-family: 'General Sans Regular';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+}
+/* footer end */
+
+.pricing {
+  margin-top: 48px;
+  margin-bottom: 97px;
+}
+
+.pricing-virual-tour {
+  background-color: #000000;
+  border-radius: 32px;
+  padding: 72px 32px 47px 32px;
+
+}
+.pricing-title-info {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+.pricing-title {
+  font-family: 'Neue Regrade Semibold';
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  position: relative;
+}
+.pricing-title-img {
+  position: absolute;
+  top: 112px;
+  left: 409px;
+}
+.pricing-subtitle {
+  font-family: 'General Sans Regular';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  max-width: 320px;
+  letter-spacing: 0.01em;
+}
+.pricing-subscribe-container {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+  padding-bottom: 32px;
+  flex-wrap: wrap;
+
+}
+.pricing-testimonial-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffadd;
+  min-width: 380px;
+  padding: 32px;
+  border-radius: 24px;
+  gap: 31px;
+  flex: 1;
+}
+.pricing-testimonial-card:nth-child(2n) {
+  background-color: #fff;
+  height: 696px;
+}
+
+.pricing-testimonial-card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pricing-testimonial-card-name {
+  font-family: 'Neue Regrade Semibold';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000000;
+}
+.pricing-testimonial-card-description {
+  font-family: 'General Sans Regular';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+.pricing-testimonial-card-condition {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-testimonial-card-price {
+  font-family: 'Neue Regrade Semibold';
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+  color: #000000;
+  
+}
+.pricing-testimonial-card-month {
+  font-family: 'Neue Regrade Semibold';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #000000;
+}
+.pricing-testimonial-card-pause {
+  font-family: 'General Sans Regular';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
+}
+.pricing-testimonial-card-advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pricing-testimonial-card-advantage {
+  font-family: 'General Sans Regular';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+}
+.pricing-testimonial-card-bonus {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pricing-testimonial-card-bonus-title {
+  font-family: 'General Sans Regular';
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.pricing-testimonial-card-bonus-stack {
+  display: flex;
+  gap: 12px;
+}
+.pricing-testimonial-card-bonus-item {
+  font-family: 'General Sans Regular';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
+  padding: 0 12px;
+  border: 1px solid #000000;
+  border-radius: 100px;
+}
+.pricing-testimonial-card-popular-name {
+  display: flex;
+ 
+  align-items: center;
+  gap: 12px;
+}
+.pricing-testimonial-card-popular {
+  font-family: 'General Sans Regular';
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ff3333;
+  border-radius: 100px;
+  padding: 0 12px;
+}
+.pricing-testimonial-card-pricestart {
+  font-family: 'General Sans Regular';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #000000;
+  
+}
+.pricing-subscribe-description {
+  font-family: 'General Sans Regular';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.pricing-features {
+  display: flex;
+  flex-direction: column;
+
+}
+.pricing-features-title {
+  
+  font-family: 'Neue Regrade Semibold';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+.pricing-features-title-img{
+  width: 180px;
+  height: 58px;
+  border-radius: 48px;
+  object-fit: cover;
+  margin: 0 16px;
+}
+.pricing-features-align {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pricing-features-cards {
+  margin: 48px 0;
+  display: flex;
+  gap: 16px;
+
+}
+.pricing-features-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 358px;
+  border: 1px solid #000000;
+  border-radius: 32px;
+  padding: 32px;
+  gap: 24px;
+  flex: 1;
+}
+.pricing-features-card-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.pricing-features-card-heading {
+  font-family: 'Neue Regrade Semibold';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000000;
+}
+.pricing-features-card-descprition {
+  font-family: 'General Sans Regular';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+}
+.pricing-features-card-price-per-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-features-card-price {
+  font-family: 'Neue Regrade Semibold';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #000000;
+}
+.pricing-features-card-period {
+  font-family: 'General Sans Regular';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
+}
+.pricing-features-card-condition {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+
+.pricing-features-card-condition-description {
+  font-family: 'General Sans Regular';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #000000;
+  text-align: center;
+}
+.contact {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.contact-content {
+  padding: 72px 32px 96px;
+  background-color: #000000;
+  border-radius: 32px;
+}
+
+.contact-title-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 64px;
+  gap: 32px;
+}
+.contact-title {
+  font-family: 'Neue Regrade Semibold';
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+  color: #fff;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.contact-subtitle {
+  font-family: 'General Sans Regular';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+
+  max-width: 320px;
+  letter-spacing: 0.01em;
+}
+.contact-label {
+  display: flex;
+}
+.contact-label-description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+}
+.contact-label-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.contact-label-stack-name {
+  font-family: 'Neue Regrade Regular';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+.contact-label-stack-info {
+  font-family: 'General Sans Regular';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  
+}
+
+.contact-label-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 2;
+}
+.field-style {
+  background-color: #000000;
+  padding: 12px;
+  padding-left: 8px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-family: 'General Sans Regular';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  outline: none;
+  
+}
+.field-style::placeholder {
+  color: #fff;
+}
+.contact-fullname {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  
+}
+
+.contact-first-name {
+  flex: 1;
+  
+  
+}
+
+.contact-last-name {
+  flex: 1;
+}
+.contact-email {
+}
+.contact-phone {
+}
+.contact-plan {
+  appearance: none;
+  background: url(../assets/CaretUpDown.svg) 99% no-repeat;
+}
+
+.contact-message {
+  max-width: 896px;
+  max-height: 400px;
+  height: 157px;
+  resize: vertical;
+}
+.btn-submit {
+  color: #000000;
+  background-color: #fff;
+  max-width: 104px;
+}
+.contact-disclaimer {
+  font-family: 'General Sans Regular';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #fff;
+}
+.blog-hero {
+  margin-top: 48px;
+  margin-bottom: 72px;
+  
+}
+.blog-hero-content {
+  height: 640px;
+  padding: 72px 32px 48px;
+  background-color: #000000;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog-title-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.blog-title-subheading {
+  width: fit-content;
+  font-family: 'General Sans Regular';
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: var(--accent-color);
+  padding: 0 14px;
+  border-radius: 100px;
+}
+.blog-title-main {
+  width: fit-content;
+  text-align: start;
+  font-family: 'Neue Regrade Semibold';
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+.blog-hero-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.blog-hero-trend {
+  display: flex;
+  gap: 16px;
+}
+.blog-hero-trend-theme {
+  font-family: 'General Sans Regular';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #fff;
+  padding: 4px 8px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  
+}
+.blog-hero-trend-timeread {
+  font-family: 'Neue Regrade Semibold';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.6px;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* tabs */
+
+.blog-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  gap: 24px;
+  margin-bottom: 70px;
+}
+.blog-tabs-filter {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.blog-tabs.pages {
+  gap: 14px;
+}
+.blog-tabs-filter-menu {
+  border: 1px solid #000000;
+  border-radius: 100px;
+  padding: 12px;
+  display: none;
+}
+.blog-tabs-span {
+  font-family: "General Sans Regular";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 0 26px;
+  height: 48px;
+  border: 1px solid #000000;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.blog-tabs-radio {
+  position: absolute;
+  width: 0;
+}
+
+.blog-tabs-radio:checked + .blog-tabs-span{
+  color: #fff;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+}
+.blog-tabs-img {
+  border-radius: 48px;
+  width: 40px;
+  height: 24px;
+  object-fit: cover;
+}
+.p-hide {
+  display: none;
+}
+
+/* end tabs */
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 48px;
+}
+.blog-radio-carret-rev {
+  rotate: 180deg;
+}
+.blog-tabs-page {
+  font-family: "General Sans Regular";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 12px 24px;
+  border: 1px solid #000000;
+  border-radius: 100px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.blog-tabs-radio:checked + .blog-tabs-page{
+  color: #fff;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+}
+.blog-card-post {
+  text-decoration: none;
+  cursor: pointer;
+}
+.post-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 208px;
+  
+}
+.post-title-info {
+  margin: 48px 16px 32px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-bottom: 1px solid #000000;
+}
+.post-title-date {
+  border: 1px var(--accent-color);
+  background-color: var(--accent-color);
+  padding: 0 12px;
+  color: #fff;
+  border-radius: 100px;
+  font-family: "General Sans Regular";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  width: fit-content;
+}
+.post-title {
+  font-family: "Neue Regrade Semibold";
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.post-content {
+  display: flex;
+
+}
+.post-material {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: 16px;
+  margin-bottom: 97px;
+  max-width: 720px;
+}
+.post-material-disclaimer {
+  font-family: "Neue Regrade Regular";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #000000;
+  letter-spacing: 0.02em;
+  padding: 32px;
+  background-color: #fffadd;
+  border-radius: 32px;  
+}
+.post-material-heading {
+  font-family: "General Sans Regular";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.013em;
+  color: #000000;
+}
+.post-material-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.post-material-content-heading {
+  font-family: "Neue Regrade Semibold";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  letter-spacing: 0.013em;
+  color: #000000;
+}
+.post-material-content-image {
+  max-width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 32px;
+
+}
+.post-blog {
+  padding-top: 28px;
+  padding-bottom: 69px;
+}
+.post-margin {
+  margin-bottom: 144px;
+}
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 64px;
+ 
+}
+.review-avatar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.review-avatar-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.review-avatar-person {
+  display: flex;
+  flex-direction: column;
+}
+.review-avatar-person-name {
+  font-family: "General Sans Regular";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #000000;
+  white-space: nowrap;
+}
+.review-avatar-person-job {
+  font-family: "General Sans Regular";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  white-space: nowrap;
+}
+.review-likes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.review-like-count {
+  font-family: "General Sans Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25.2px;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 4px 8px;
+  width: fit-content;
+}
+
+.about {
+  margin-top: 47px;
+  margin-bottom: 144px;
+}
+
+.about-content {
+  background-color: #000000;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.about-title-info {
+  padding: 72px 32px 32px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-title {
+  font-family: "Neue Regrade Semibold";
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+  letter-spacing: 0.01em;
+  color: #fff;
+  text-transform: uppercase;
+  max-width: 646px;
+  position: relative;
+  margin-bottom: 64px;
+}
+.about-title-img {
+  position: absolute;
+  top: 211px;
+  right: 258px;
+}
+.about-subtitle {
+  font-family: "General Sans Regular";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #fff;
+  max-width: 320px;
+  margin-bottom: 64px;
+}
+.about-row {
+ 
+  display: flex;
+  gap: 16px;
+}
+.about-testimonial-card {
+  padding: 27px;
+  border: 5px dashed var(--accent-color);
+  border-radius: 32px;
+  background-color: #fffadd;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.about-testimonial-card.expand {
+  flex: 3;
+  max-width: 663px;
+}
+.about-testimonial-card:nth-child(2n) {
+  background-color: var(--accent-color);
+  
+  
+}
+.about-testimonial-card:nth-child(2n) .about-testimonial-card-title {
+  color: #fff;
+}
+.about-testimonial-card:nth-child(2n) .about-testimonial-card-paragraph {
+  color: #fff;
+}
+.about-testimonial-card:nth-child(2n) .about-testimonial-card-page {
+  color: #fff;
+}
+.about-testimonial-card-image-container {
+  height: 240px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.about-testimonial-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-testimonial-card-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.about-testimonial-card-title {
+  font-family: "Neue Regrade Semibold";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.about-testimonial-card-paragraph-page {
+  display: flex;
+  gap: 32px;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.about-testimonial-card-paragraph {
+  font-family: "General Sans Regular";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #000000;
+  word-spacing: 1px;
+}
+.about-testimonial-card-page {
+  font-family: "Neue Regrade Semibold";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.6px;
+  color: #000000;
+}

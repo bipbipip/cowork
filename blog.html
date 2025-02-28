@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/media.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header-body">
+        <a href="index.html" class="header-logo">
+          <img src="./assets/Logo.svg" alt="Logotype" class="header-logo-img" />
+        </a>
+        <section class="header-interaction">
+          <nav class="header-menu">
+            <a href="about.html" class="header-menu-item">About</a>
+            <a href="pricing.html" class="header-menu-item">Pricing</a>
+            <a href="blog.html" class="header-menu-item">Blog</a>
+            <a href="contact.html" class="header-menu-item">Contact</a>
+          </nav>
+          <div class="header-buttons">
+            <button class="btn btn-outline">Log In</button>
+            <button class="btn btn-blue">Sign Up</button>
+          </div>
+        </section>
+        <a href="#menu" class="burger-menu"
+          ><img
+            src="./assets/burger-menu.svg"
+            alt="burger menu icon"
+            class="burger-menu-icon"
+        /></a>
+        <div class="menu-overlay" id="menu">
+          <div class="menu-overlay-head">
+            <img
+              src="./assets/Logo-white.svg"
+              alt="Logotype"
+              class="footer-logo"
+            />
+            <a href="#" class="close-btn"
+              ><img
+                src="/assets/close.svg"
+                alt="close menu button"
+                class="burger-menu-close"
+            /></a>
+          </div>
+
+          <div class="header-burger-menu-stack">
+            <nav class="header-burger-menu">
+              <a href="about.html" class="header-burger-menu-item">About</a>
+              <a href="pricing.html" class="header-burger-menu-item">Pricing</a>
+              <a href="blog.html" class="header-burger-menu-item">Blog</a>
+              <a href="contact.html" class="header-burger-menu-item">Contact</a>
+            </nav>
+            <div class="header-buttons burger-buttons">
+              <button class="btn btn-outline burger-outline">Log In</button>
+              <button class="btn btn-blue">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="blog-hero container">
+        <section class="blog-hero-content">
+          <div class="blog-title-info">
+            <span class="blog-title-subheading">Recent Post</span>
+            <h1 class="blog-title-main">
+              Navigating the Future: Trends in Modern Coworking Spaces
+            </h1>
+          </div>
+          <section class="blog-hero-action">
+            <div class="blog-hero-trend">
+              <span class="blog-hero-trend-theme">Trending</span>
+              <span class="blog-hero-trend-timeread">7 Min Read</span>
+            </div>
+            <a href="#" class="btn-red">Read The Articles</a>
+          </section>
+        </section>
+      </section>
+
+      <section class="blog-tabs">
+        <img src="./assets/filter.svg" alt="filter icon" class="blog-tabs-filter-menu">
+        <div class="blog-tabs-filter">
+          <div class="blog-tabs-item">
+            <input
+              type="radio"
+              name="tabs"
+              class="blog-tabs-radio"
+              id="radio-1"
+            />
+            <label for="radio-1" class="blog-tabs-span">All Posts</label>
+          </div>
+          <div class="blog-tabs-item">
+            <input
+              type="radio"
+              name="tabs"
+              class="blog-tabs-radio"
+              id="radio-2"
+            />
+            <label for="radio-2" class="blog-tabs-span">Trending</label>
+          </div>
+          <div class="blog-tabs-item">
+            <input
+              type="radio"
+              name="tabs"
+              class="blog-tabs-radio"
+              id="radio-3"
+            />
+            <label for="radio-3" class="blog-tabs-span">Productivity</label>
+          </div>
+          <div class="blog-tabs-item">
+            <input
+              type="radio"
+              name="tabs"
+              class="blog-tabs-radio"
+              id="radio-4"
+            />
+            <label for="radio-4" class="blog-tabs-span">Lifestyle</label>
+          </div>
+          <div class="blog-tabs-item">
+            <input
+              type="radio"
+              name="tabs"
+              class="blog-tabs-radio"
+              id="radio-5"
+            />
+            <label for="radio-5" class="blog-tabs-span">Talk</label>
+          </div>
+        </div>
+        <div class="blog-tabs-item tabs-search">
+          <input
+            type="radio"
+            name="tabs"
+            class="blog-tabs-radio"
+            id="radio-6"
+          />
+          <label for="radio-6" class="blog-tabs-span"
+            >Search
+            <img
+              src="./assets/search.jpg"
+              alt="search icon"
+              class="blog-tabs-img"
+          /></label>
+        </div>
+      </section>
+     
+      <section class="blog container wrapper">
+        <section class="blog-grid">
+          <div class="blog-card">
+            <a href="./post.html" class="blog-card-post">
+              <img
+                src="./assets/blog-card-image1.jpg"
+                alt="IT workplace foto"
+                class="blog-card-img"
+              />
+              <div class="blog-card-item">
+                <span class="blog-card-item-theme">Trending</span>
+                <span class="blog-card-item-timepass">7 min read</span>
+              </div>
+              <p class="blog-card-title">
+                Navigating the Future: Trends in Modern Coworking Spaces
+              </p>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="./post.html" class="blog-card-post">
+              <img
+                src="./assets/blog-card-image2.jpg"
+                alt="Laptop on the table"
+                class="blog-card-img"
+              />
+              <div class="blog-card-item">
+                <span class="blog-card-item-theme">Productivity</span>
+                <span class="blog-card-item-timepass">5 min read</span>
+              </div>
+              <p class="blog-card-title">
+                Mastering Productivity: Tips from Cowork's High Achievers
+              </p>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="./post.html" class="blog-card-post">
+              <img
+                src="./assets/blog-card-image3.jpg"
+                alt="old fashion electronical stuff"
+                class="blog-card-img"
+              />
+              <div class="blog-card-item">
+                <span class="blog-card-item-theme">Talk</span>
+                <span class="blog-card-item-timepass">10 min read</span>
+              </div>
+              <p class="blog-card-title">
+                Tech Talk: The Backbone of Cowork's Seamless Experience
+              </p>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="./post.html" class="blog-card-post">
+              <img
+                src="./assets/blog-card-image4.jpg"
+                alt="man working in office"
+                class="blog-card-img"
+              />
+              <div class="blog-card-item">
+                <span class="blog-card-item-theme">Career</span>
+                <span class="blog-card-item-timepass">8 min read</span>
+              </div>
+              <p class="blog-card-title">
+                The Rise of Freelancing and the Gig Economy
+              </p>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="./post.html" class="blog-card-post">
+              <img
+                src="./assets/blog-card-image5.jpg"
+                alt="jumping bubbles"
+                class="blog-card-img"
+              />
+              <div class="blog-card-item">
+                <span class="blog-card-item-theme">Talk</span>
+                <span class="blog-card-item-timepass">11 min read</span>
+              </div>
+              <p class="blog-card-title">
+                Networking Success Stories from Our Community
+              </p>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="./post.html" class="blog-card-post">
+              <img
+                src="./assets/blog-card-image6.png"
+                alt="space scenery"
+                class="blog-card-img"
+              />
+              <div class="blog-card-item">
+                <span class="blog-card-item-theme">Trending</span>
+                <span class="blog-card-item-timepass">6 min read</span>
+              </div>
+              <p class="blog-card-title">
+                Hot New Startups to Watch from Our Space
+              </p>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="./post.html" class="blog-card-post">
+              <img
+                src="./assets/blog-card-image7.jpg"
+                alt="table scenery"
+                class="blog-card-img"
+              />
+              <div class="blog-card-item">
+                <span class="blog-card-item-theme">Lifestyle</span>
+                <span class="blog-card-item-timepass">5 min read</span>
+              </div>
+              <p class="blog-card-title">
+                Enhancing Wellness for Remote Workers
+              </p>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="./post.html" class="blog-card-post">
+              <img
+                src="./assets/blog-card-image8.jpg"
+                alt="builder's tool"
+                class="blog-card-img"
+              />
+              <div class="blog-card-item">
+                <span class="blog-card-item-theme">Productivity</span>
+                <span class="blog-card-item-timepass">7 min read</span>
+              </div>
+              <p class="blog-card-title">
+                7 Team Collaboration Tools for Remote Teams
+              </p>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="./post.html" class="blog-card-post">
+              <img
+                src="./assets/blog-card-image9.jpg"
+                alt="foto of office"
+                class="blog-card-img"
+              />
+              <div class="blog-card-item">
+                <span class="blog-card-item-theme">Trending</span>
+                <span class="blog-card-item-timepass">4 min read</span>
+              </div>
+              <p class="blog-card-title">
+                Coworking Space Design Trends for 2024
+              </p>
+            </a>
+          </div>
+        </section>
+      </section>
+      <section class="blog-tabs pages">
+        <div class="blog-tabs-item">
+          <input
+            type="radio"
+            name="tabs"
+            class="blog-tabs-radio"
+            id="page-prev"
+          />
+          <label for="page-prev" class="blog-tabs-page"
+            ><img
+              src="./assets/caret.svg"
+              alt="caret icon"
+              class="blog-radio-carret"
+          /></label>
+        </div>
+        <div class="blog-tabs-item">
+          <input type="radio" name="tabs" class="blog-tabs-radio" id="page-1" />
+          <label for="page-1" class="blog-tabs-page">1</label>
+        </div>
+        <div class="blog-tabs-item p-2">
+          <input type="radio" name="tabs" class="blog-tabs-radio" id="page-2" />
+          <label for="page-2" class="blog-tabs-page">2</label>
+        </div>
+        <div class="blog-tabs-item p-hide">
+          <input type="radio" name="tabs" class="blog-tabs-radio" id="page-5" />
+          <label for="page-5" class="blog-tabs-page">...</label>
+        </div>
+        <div class="blog-tabs-item p-3">
+          <input type="radio" name="tabs" class="blog-tabs-radio" id="page-3" />
+          <label for="page-3" class="blog-tabs-page">3</label>
+        </div>
+        <div class="blog-tabs-item p-4">
+          <input type="radio" name="tabs" class="blog-tabs-radio" id="page-4" />
+          <label for="page-4" class="blog-tabs-page">4</label>
+        </div>
+        <div class="blog-tabs-item p-5">
+          <input type="radio" name="tabs" class="blog-tabs-radio" id="page-5" />
+          <label for="page-5" class="blog-tabs-page">5</label>
+        </div>
+        <div class="blog-tabs-item">
+          <input
+            type="radio"
+            name="tabs"
+            class="blog-tabs-radio"
+            id="page-next"
+          />
+          <label for="page-next" class="blog-tabs-page"
+            ><img
+              src="./assets/caret.svg"
+              alt="caret icon"
+              class="blog-radio-carret-rev"
+          /></label>
+        </div>
+      </section>
+      
+      <section class="cta cta-blog container">
+        <section class="cta-content">
+          <div class="cta-heading">
+            <h2 class="cta-title">
+              Seize
+              <img
+                src="./assets/cta-image.jpg"
+                alt="puzzle image"
+                class="cta-title-img"
+              />
+              The Moment Join Cowork Today!
+            </h2>
+            <p class="cta-subheading">
+              Uncover the transformative power of Cowork as echoed by those
+              who've made it their professional haven. This is more than finding
+              a desk; it's discovering a community that fuels your journey to
+              success.
+            </p>
+          </div>
+
+          <a href="#" class="cta-btn">Claim Your Spot</a>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section class="footer container footer-wrapper">
+        <section class="footer-card">
+          <div class="footer-newsletter">
+            <img
+              src="./assets/Logo-white.svg"
+              alt="Logotype"
+              class="footer-logo"
+            />
+            <div class="footer-newsletter-stack">
+              <span class="footer-adv"
+                >Join our newsletter to stay up to date on features and
+                releases.</span
+              >
+              <div class="footer-email-form">
+                <input
+                  type="email"
+                  name="email"
+                  id="1"
+                  placeholder="Enter your email"
+                  class="footer-email"
+                />
+                <button class="footer-subscribe">Subscribe</button>
+              </div>
+              <span class="footer-adv"
+                >By subscribing you agree to with our Privacy Policy and provide
+                consent to receive updates from our company.</span
+              >
+            </div>
+          </div>
+          <section class="footer-links">
+            <div class="footer-links-categories">
+              <span class="footer-links-category">Explore More</span>
+              <div class="footer-link">
+                <a href="./index.html" class="footer-link-item">Home</a>
+                <a href="./about.html" class="footer-link-item">About</a>
+                <a href="./pricing.html" class="footer-link-item">Pricing</a>
+                <a href="./blog.html" class="footer-link-item">Blog</a>
+                <a href="#" class="footer-link-item">Events</a>
+              </div>
+            </div>
+            <div class="footer-links-categories">
+              <span class="footer-links-category">Stay Connected</span>
+              <div class="footer-link">
+                <a href="#" class="footer-link-item">Subscribe</a>
+                <a href="#" class="footer-link-item">Member Stories</a>
+                <a href="#" class="footer-link-item">Locations</a>
+                <a href="#" class="footer-link-item">Write for Us</a>
+              </div>
+            </div>
+            <div class="footer-links-categories">
+              <span class="footer-links-category">Follow Us</span>
+              <div class="footer-link">
+                <a href="#" class="footer-link-item">Facebook</a>
+                <a href="#" class="footer-link-item">Instagram</a>
+                <a href="#" class="footer-link-item">X</a>
+                <a href="#" class="footer-link-item">LinkedIn</a>
+                <a href="#" class="footer-link-item">Youtube</a>
+              </div>
+            </div>
+          </section>
+        </section>
+        <div class="footer-copyright">
+          <span class="author">© 2024 Cowork. All rights reserved.</span>
+          <div class="copyright-links">
+            <a href="#" class="copyright-link-item">Privacy Policy</a>
+            <a href="#" class="copyright-link-item">Terms of Service</a>
+            <a href="#" class="copyright-link-item">Cookies Settings</a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
